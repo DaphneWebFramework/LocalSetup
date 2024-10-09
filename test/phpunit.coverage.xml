@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="bootstrap.php"
+         testdox="true"
+         colors="true"
+         cacheDirectory=".coverage/.cache">
+  <testsuites>
+    <testsuite name="suite">
+      <directory>suite</directory>
+    </testsuite>
+  </testsuites>
+  <source>
+    <include>
+      <directory>../source</directory>
+    </include>
+  </source>
+  <coverage>
+    <report>
+      <html outputDirectory=".coverage"/>
+    </report>
+  </coverage>
+</phpunit>
